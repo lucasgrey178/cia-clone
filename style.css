@@ -1,0 +1,902 @@
+/* begining of navbar */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* 1ST NAVBAR */
+.nav1{
+    display: flex;
+    justify-content:flex-end;
+    background:#222F54;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    gap: 30px;
+    padding: 0 10px;
+}
+/* 2ND NAVBAR */
+.part1{
+    background: #1d6192;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 0px 15px;
+    font-size: large;
+    color: #ffffff;
+    position: relative;
+    z-index: 1000;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.part3{
+    display: flex;
+    align-items: center;
+    gap: 79px;
+}
+.search-box {
+    display: flex;
+    height: 64px;
+    margin-left: auto;
+}
+
+.search-box input {
+    width: 230px;
+    background: transparent;
+    border: 1px solid #164c72;
+    padding: 0 20px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: white;
+}
+
+.search-box button {
+    width: 55px;
+    background: transparent;
+    border: 1px solid #164c72;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*  BEGINING OF DROP DROPDOWN menu */
+.pointer{
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.dropdown .content{
+    position: absolute;
+    min-width:15px;
+    background-color:#1d6192 ;
+    display: none;
+    
+}
+.dropdown:hover .content{
+    display: block;
+}
+/* .dropdown a:first-child:hover{
+    border-bottom: 4px solid yellow;
+    width: 89%;
+} */
+.pointer2{
+    cursor: pointer;
+}
+.dropdown2 a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.dropdown2 .content2{
+    position: absolute;
+    min-width: 10px;
+    background-color: #1d6192;
+    display: none;
+    
+}
+.dropdown2:hover .content2{
+    display: block;
+}
+
+.pointer3{
+    cursor: pointer;
+}
+.dropdown3 a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.dropdown3 .content3{
+    position: absolute;
+    min-width: 10px;
+    background-color: #1d6192;
+    display: none;
+    
+}
+.dropdown3:hover .content3{
+    display: block;
+}
+.pointer4{
+    cursor: pointer;
+}
+.dropdown4 a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.dropdown4 .content4{
+    position: absolute;
+    min-width: 10px;
+    background-color: #1d6192;
+    display: none;
+    
+}
+.dropdown4:hover .content4{
+    display: block;
+}
+.pointer5{
+    cursor: pointer;
+}
+.dropdown5 a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.dropdown5 .content5{
+    position: absolute;
+    min-width: 3px;
+    background-color: #1d6192;
+    display: none;
+    
+}
+.dropdown5:hover .content5{
+    display: block;
+}
+/* end of navbar */
+
+
+/* HERO SECTION */
+/* BEGINING OF HERO CAROSUAL */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    z-index: 1;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation-name: heroslider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 29%;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: liner-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85));
+}
+.hero-text{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+.hero-text h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    line-height: 1.05;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.hero-text p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.slide1{
+    animation-delay: 0s;
+}
+.slide2{
+    animation-delay: 5s;
+}
+.slide3{
+    animation-delay: 10s;
+}
+.slide4{
+    animation-delay: 15s;
+}
+@keyframes heroslider{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    22%{
+        opacity: 1;
+    }
+    27%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.slide1 .hero-text{
+    bottom: 3px;
+}
+.hero2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* END OF HERO CAROUSAL */
+
+
+/* BEGINING OF 2ND HERO */
+.hero2nd{
+    display: flex;
+    color: black;
+    padding: 100px 70px;
+    align-items:center;
+    gap: 5px;
+    font-family: gt sectra fine;
+    font-size: 20px;
+}
+.Agency-text{
+    padding: 75px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: public sans light;   
+}
+
+.hero3{
+    width:100%;
+    display: flex;
+}
+.hero3rd{
+    width: 50%;
+}
+.hero3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-jt{
+    background: #f0eff4;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 70px 90px;
+    display: flex;
+    flex-direction: column;
+}
+.career-title{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.career-title img{
+    width: 80px;
+    height: 80px;
+}
+.career-title h1{
+    margin: 0;
+}
+.career-content{
+    margin: 35px;
+    padding-left: 20px;
+    border-left: 4px solid #f5cf55;
+}
+.career-content p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.career-content button{
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: #f5cf55;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* END OF 2ND HERO */
+
+
+/*  begining of 4th hero */
+.hero4 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    color: white;
+}
+
+
+/* BACKGROUND IMAGE */
+.hero4-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero4-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* CIA LOGO */
+.cia-logo {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    z-index: 2;
+}
+
+.cia-logo img {
+    width: auto;
+    height: 500px;
+    display: block;
+}
+
+
+/* RIGHT SIDE CONTENT */
+.Legacy-content {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38%;
+    z-index: 3;
+}
+
+
+/* OUR LEGACY TITLE */
+.legacy-title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.legacy-title img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.legacy-title h1 {
+    margin: 0;
+    color: white;
+    font-size: 48px;
+    line-height: 0.95;
+}
+
+.legacy-text {
+    padding-left: 20px;
+    border-left: 4px solid #f5cf55;
+}
+
+.legacy-text p {
+    margin: 0 0 30px 0;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* BUTTON */
+.legacy-text button {
+    padding: 15px 25px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* End of 4th hero */
+
+/*  BEGINING OF WORLD SECTION */
+.world{
+    display: flex;
+    align-items: center;
+    padding: 35px 85px;
+}
+/* END OF WORLD SECTION */
+
+.hero-img4{
+    display: flex;
+    gap: 35px;
+    width: 100%;
+    padding: 40px 6%;
+    box-sizing: border-box;
+}
+.img4-content,
+.img4-content2,
+.img4-content3{
+    flex: 1;
+    background: #1d315c;
+    color: white;
+    overflow: hidden;
+    
+}
+.img4-content img,
+.img4-content2 img,
+.img4-content3 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.img4-content h1,
+.img4-content2 h1,
+.img4-content3 h1{
+    margin: 0;
+    padding:  35px;
+    min-height: 130px;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+    /* background-color: #1d315c; */
+}
+.read-more{
+    border-top: 1.9px solid rgba(243, 223, 9, 0.5);
+    padding: 20px 35px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.big-pic{
+    position: relative;
+    height: 520px;
+    width: 100%;
+    overflow: hidden;
+}
+.big-pic2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.big-pic2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.big-pic2::after{
+    /* content: ; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 30, 75, 0.72);
+}
+.big-pic3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.big-pic3 img{
+    width: 230px;
+    height: auto;
+    margin-top: 10px;
+}
+.big-pic-content{
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    margin-top: 30px;
+}
+.big-pic-content h1{
+    font-size: 42px;
+    margin: 0 0 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.big-pic-content p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+
+.last-pic{
+    position: relative;
+    height: 520px;
+    width: 100%;
+    overflow: hidden; 
+}
+.last-pic2{
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.last-pic2 img{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.last-pic2 h1{
+  position: absolute;
+    top: 235px;
+    left: 55%;
+    width: 40%;
+    text-align: left;
+    color: white;
+    z-index: 2;
+     font-size: 55px;
+    margin: 0 0 30px;
+    line-height: 1.2;
+}
+.span{
+    color: #f5cf55;
+    font-weight: bold;
+
+}
+
+.bottom-blue {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+    background-color:#216ba0;
+
+    padding: 30px 6%;
+    box-sizing: border-box;
+}
+
+.bottom-blue2,
+.bottom-blue3,
+.bottom-blue4,
+.bottom-blue5 {
+    padding-left: 20px;
+    min-height: 320px;
+}
+.bottom-blue2,
+.bottom-blue3,
+.bottom-blue4,
+.bottom-blue5{
+    border-right: 3px solid #e6c85c;
+    margin-right: 20px;
+}
+
+
+.bottom-blue h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 25px;
+    font-family: Arial, sans-serif;
+}
+
+.bottom-blue p {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 22px;
+    font-family: Arial, sans-serif;
+    line-height: 1.35;
+}
+
+
+/* MOBILE PHONE RESPONSIVENESS */
+
+
+@media (max-width: 768px) {
+
+    /* TOP NAVBAR */
+    .nav1 {
+        justify-content: center;
+        gap: 15px;
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+
+    /* MAIN NAVBAR */
+    .part1 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .part2 {
+        justify-content: center;
+    }
+
+    .part3 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+
+    /* SEARCH */
+    .search-box {
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    .search-box input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .search-box button {
+        width: 50px;
+    }
+
+
+    /* MAIN HERO */
+    .hero {
+        height: 320px;
+    }
+
+    .hero-text {
+        width: 92%;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+
+    /* OUR AGENCY */
+    .hero2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero2nd {
+        padding: 50px 25px 20px;
+        font-size: 18px;
+    }
+
+    .Agency-text {
+        padding: 20px 25px 50px;
+        font-size: 16px;
+    }
+
+
+    /* CAREERS */
+    .hero3 {
+        flex-direction: column;
+    }
+
+    .hero3rd,
+    .hero-jt {
+        width: 100%;
+    }
+
+    .hero3rd {
+        height: 280px;
+    }
+
+    .hero-jt {
+        padding: 45px 25px;
+    }
+
+    .career-title {
+        gap: 15px;
+    }
+
+    .career-title img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .career-title h1 {
+        font-size: 30px;
+    }
+
+    .career-content {
+        margin: 25px 0;
+        padding-left: 15px;
+    }
+
+    .career-content p {
+        font-size: 17px;
+    }
+
+
+    /* LEGACY */
+    .hero4 {
+        height: auto;
+        min-height: 750px;
+    }
+
+    .cia-logo {
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .cia-logo img {
+        height: 230px;
+        width: auto;
+    }
+
+    .Legacy-content {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: auto;
+        padding: 300px 25px 50px;
+    }
+
+    .legacy-title {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .legacy-title img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .legacy-title h1 {
+        font-size: 32px;
+    }
+
+    .legacy-text p {
+        font-size: 16px;
+    }
+
+
+    /* OUR STORIES */
+    .world {
+        padding: 35px 25px;
+        gap: 15px;
+    }
+
+    .world img {
+        height: 60px;
+    }
+
+    .world h1 {
+        font-size: 30px;
+    }
+
+
+    /*  STORY CARDS */
+    .hero-img4 {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .img4-content img,
+    .img4-content2 img,
+    .img4-content3 img {
+        height: 220px;
+    }
+
+    .img4-content h1,
+    .img4-content2 h1,
+    .img4-content3 h1 {
+        padding: 25px;
+        min-height: auto;
+        font-size: 20px;
+    }
+
+
+    /* 250 YEARS */
+    .big-pic {
+        height: 600px;
+    }
+
+    .big-pic3 img {
+        width: 150px;
+    }
+
+    .big-pic-content {
+        top: 170px;
+        width: 88%;
+    }
+
+    .big-pic-content h1 {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .big-pic-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    /* OSAMA BIN LADEN SECTION */
+    .last-pic {
+        height: 450px;
+    }
+
+    .last-pic2 h1 {
+        top: 180px;
+        left: 25px;
+        width: 85%;
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+
+    /* FOOTER */
+    .bottom-blue {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+    }
+
+    .bottom-blue2,
+    .bottom-blue3,
+    .bottom-blue4 {
+        border-right: none;
+        /* border-bottom: 2px solid #e6c85c; */
+        margin-right: 0;
+        padding: 25px 0;
+        min-height: auto;
+    }
+
+    .bottom-blue5 {
+        padding: 25px 0;
+        min-height: auto;
+    }
+
+}
